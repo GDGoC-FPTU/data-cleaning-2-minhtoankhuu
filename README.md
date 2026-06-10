@@ -50,9 +50,9 @@ Học viên thực hiện theo các bước sau:
     - Các bản ghi trùng lặp và giá trị lỗi (giá > $5000 hoặc < 0) đã được loại bỏ chưa?
 
 ## 4. Giải thích thuật ngữ
-- **PII (Personally Identifiable Information)**: Thông tin định danh cá nhân cần được bảo vệ.
-- **Sanitization**: Quá trình làm sạch dữ liệu.
-- **Outlier**: Giá trị bất thường trong tập dữ liệu.
+- **PII (Personally Identifiable Information)**: Thông tin định danh cá nhân cần được bảo vệ, ví dụ như `name` và `email` trong `toxic_sample.json`. Trong lab này, trường `name` được xóa hoàn toàn và `email` được che bớt để giảm rủi ro lộ thông tin cá nhân.
+- **Sanitization**: Quá trình làm sạch dữ liệu trước khi đưa vào hệ thống AI. Trong lab này, sanitization bao gồm xóa PII, che email, loại bản ghi trùng `id`, loại giá quá cao và loại giá âm.
+- **Outlier**: Giá trị bất thường trong tập dữ liệu. Ví dụ, sản phẩm `Mechanical Pencil` có giá `99999`, cao bất thường so với ngưỡng `$5000`, nên bị loại khỏi dữ liệu sạch.
 
 ---
 *Chúc các bạn hoàn thành bài Lab xuất sắc!*
